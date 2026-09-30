@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Prism Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="src/img/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <h1><strong>Prism</strong> Studio</h1>
+      <img src="src/img/logo.svg" alt="Logo da Prism Studio" />
+    </header>
+    <main>
+      <!-- Seção Hero -->
+      <div class="animacao">
+        <section class="hero">
+          <div class="bg">
+            <img src="src/img/bg-hero.webp" alt="Fundo da seção Hero" />
+            <video class="videoHero"></video>
+          </div>
+          <div class="subtitulo">
+            <h3>DESIGN, TECNOLOGIA E MOVIMENTO</h3>
+            <video autoplay muted loop>
+              <source src="src/img/card-subtitulo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="conteudo">
+            <h2>
+              Experiências digitais que transformam marcas em referência
+            </h2>
+            <p>
+              Criamos sites autorais, experiências interativas e produtos
+              digitais que unem estratégia, tecnologia e identidade.
+            </p>
+            <div class="botoes">
+              <a href="#"
+                >Solicitar Orçamento
+                <img src="src/img/seta-botaoprimario.svg" alt=""
+              /></a>
+              <a href="#" class="botaoSecundario"
+                >Entrar em contato
+                <img src="src/img/seta-botaocontato.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+        <div class="retangulos">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <section class="textoAnimado">
+          <h2>
+            Não acreditamos em soluções genéricas. Cada projeto é pensado do
+            zero, unindo estratégia, design e desenvolvimento.
+          </h2>
+        </section>
+      </div>
+      <section class="projetosRealizados">
+        <h2>Projetos Recentes</h2>
+        <p>
+          Uma seleção de experiências construídas para marcas que não querem
+          parecer iguais às outras.
+        </p>
+        <div class="projetos">
+          <div class="projeto">
+            <img src="src/img/projeto-nexus-v2.webp" alt="" />
+          </div>
+          <div class="projeto">
+            <img src="src/img/projeto-dt-money-v2.webp" alt="" />
+          </div>
+          <div class="projeto">
+            <img src="src/img/projeto-pringles-v2.webp" alt="" />
+          </div>
+          <div class="projeto">
+            <img src="src/img/projeto-stranger-things-v2.webp" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="animacao3d">
+      <section class="transicao">
+        <div class="diamante"></div>
+        <h2>Identidade</h2>
+        <h2>Experiência</h2>
+        <h2>Performance</h2>
+      </section>
+      <footer>
+        <div class="bg">
+          <img src="src/img/bg-footer.webp" alt="Fundo da seção Footer" />
+          <video class="videoFooter"></video>
+        </div>
+        <div class="esquerda">
+          <h2><strong>Prism</strong> Studio</h2>
+          <div>
+            <p>© 2026 Prism Studio - Todos os direitos reservados</p>
+            <a href="#">Política de Privacidade</a>
+          </div>
+        </div>
+        <div class="direita">
+          <h2>Sua marca merece uma presença impossível de ignorar</h2>
+          <p>
+            Vamos transformar sua ideia em uma experiência digital marcante.
+          </p>
+          <div class="botoes">
+            <a href="#"
+              >Solicitar Orçamento
+              <img src="src/img/seta-botaoprimario.svg" alt=""
+            /></a>
+            <a href="#" class="botaoSecundario"
+              >Entrar em contato
+              <img src="src/img/seta-botaocontato.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="preloader">
+      <div class="preloader-text">0%</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
